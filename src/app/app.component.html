@@ -1,0 +1,11 @@
+<h1 class="text-center my-5">
+  {{ duration }}</h1>
+<div class="text-center">
+  <button class="btn btn-primary mx-5" id="start">
+    <span *ngIf="isStartStopToggle">Start</span>
+    <span *ngIf="!isStartStopToggle">Stop</span>
+  </button>
+  <button class="btn btn-primary mx-5" id="wait">Wait</button>
+  <button class="btn btn-primary mx-5" id="reset">Reset</button>
+</div>
+<router-outlet></router-outlet>
